@@ -20,8 +20,6 @@ export function Cursor() {
     const isNarrow = window.innerWidth < 768
     if (isTouch || isNarrow) return
 
-    document.documentElement.classList.add('custom-cursor')
-
     const target = { x: 0, y: 0 }
     const ring = { x: 0, y: 0 }
     let started = false
@@ -43,6 +41,8 @@ export function Cursor() {
         ring.x = target.x
         ring.y = target.y
         started = true
+        // Hide the native cursor only once the custom one has a position to render at.
+        document.documentElement.classList.add('custom-cursor')
         setVisible(true)
       }
       if (dotRef.current) {

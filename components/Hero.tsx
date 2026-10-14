@@ -128,20 +128,32 @@ export function Hero() {
           </div>
 
           <Reveal className="lg:col-span-5" delay={0.12}>
-            <div className="rounded-lg border border-line bg-bg-elevated/50 p-6">
-              <p className="font-mono text-xs uppercase tracking-[0.12em] text-accent">Education</p>
-              <p className="mt-3 font-display text-2xl text-text">{content.about.education.school}</p>
-              <p className="mt-2 text-sm text-text-muted">{content.about.education.degree}</p>
-              <p className="mt-1 font-mono text-xs text-text-muted">
-                Graduation {content.about.education.graduation}
-              </p>
-              <p className="mt-4 font-mono text-xs uppercase tracking-[0.12em] text-text-muted">
-                Coursework
-              </p>
-              <p className="mt-2 text-sm text-text-muted">
-                {content.about.education.coursework.join(' · ')}
-              </p>
-              <p className="mt-4 font-mono text-xs text-text-muted">{content.site.status}</p>
+            <div className="rounded-lg border border-line bg-bg-elevated/50">
+              <div className="flex items-center justify-between gap-4 border-b border-line px-6 py-4">
+                <p className="font-mono text-xs uppercase tracking-[0.12em] text-accent">Education</p>
+                <p className="font-mono text-xs uppercase tracking-[0.12em] text-text-muted">
+                  Grad {content.about.education.graduation}
+                </p>
+              </div>
+
+              <div className="px-6 py-5">
+                <p className="font-display text-2xl text-text">{content.about.education.school}</p>
+                <p className="mt-2 text-sm leading-relaxed text-text-muted">{content.about.education.degree}</p>
+              </div>
+
+              <div className="border-t border-line px-6 py-5">
+                <p className="font-mono text-xs uppercase tracking-[0.12em] text-text-muted">Coursework</p>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {content.about.education.coursework.map((course) => (
+                    <li
+                      key={course}
+                      className="rounded-full border border-line px-3 py-1 font-mono text-[0.7rem] uppercase tracking-wider text-text-muted"
+                    >
+                      {course}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </Reveal>
         </div>

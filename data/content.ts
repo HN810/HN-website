@@ -69,23 +69,6 @@ const products: Product[] = [
 /** Smaller / public projects. The Projects grid is laid out for 4 entries. */
 const projects: Project[] = [
   {
-    id: 'uav-landing',
-    index: '01',
-    name: 'Autonomous UAV Landing',
-    kind: 'University of Waterloo Aerial Robotics Group',
-    period: 'Sep – Dec 2025',
-    summary:
-      'Computer-vision landing-zone prediction integrated with the flight stack for end-to-end autonomous landing.',
-    highlights: [
-      'Processes live camera feeds at 30+ FPS',
-      'Landing-zone prediction at 92% accuracy across 5,000+ real-time frames',
-      'Integrated with the existing flight stack for end-to-end autonomous landing',
-    ],
-    stack: ['Python', 'PyTorch', 'NumPy', 'OpenCV'],
-    links: { github: 'https://github.com/HN810/autonomy-bootcamp-2025-p1' },
-    visual: 'TODO: top-down landing-pad bounding-box animation (SVG)',
-  },
-  {
     id: 'ckd-predictor',
     index: '02',
     name: 'Chronic Kidney Disease Predictor',
@@ -104,6 +87,23 @@ const projects: Project[] = [
       'A real-time sign language detection system with 100% accuracy across all 26 different gestures, using YOLOv8 object detection to identify hand gestures.',
     stack: ['Python', 'YOLOv8'],
     links: { github: 'https://github.com/HN810/Sign-Language-Detector' },
+  },
+  {
+    id: 'uav-landing',
+    index: '01',
+    name: 'Autonomous UAV Landing',
+    kind: 'University of Waterloo Aerial Robotics Group',
+    period: 'Sep – Dec 2025',
+    summary:
+      'Computer-vision landing-zone prediction integrated with the flight stack for end-to-end autonomous landing.',
+    highlights: [
+      'Processes live camera feeds at 30+ FPS',
+      'Landing-zone prediction at 92% accuracy across 5,000+ real-time frames',
+      'Integrated with the existing flight stack for end-to-end autonomous landing',
+    ],
+    stack: ['Python', 'PyTorch', 'NumPy', 'OpenCV'],
+    links: { github: 'https://github.com/HN810/autonomy-bootcamp-2025-p1' },
+    visual: 'TODO: top-down landing-pad bounding-box animation (SVG)',
   },
   {
     id: 'semantic-image-search',
@@ -130,7 +130,7 @@ export const content = {
       linkedin: 'https://linkedin.com/in/hussain-nasir',
       github: 'https://github.com/HN810',
       resume: 'https://drive.google.com/file/d/1rvjJNAv3oS7cKqqZ8fSUCSzbLx_3zM0Z/view?usp=sharing',
-      calender: 'https://calendly.com/h25nasir-uwaterloo/30min',
+      calender: 'https://calendly.com/hussain-nasir/30min',
     },
     /** Typing terminal card (hero, right side). Include the leading "> ". */
     terminalLines: [
@@ -149,8 +149,8 @@ export const content = {
   about: {
     heading: "Hello, I'm Hussain.",
     body: [
-      "I'm a Computer Science and Mathematics student at the University of Waterloo who likes turning messy, real-world problems into reliable software.",
-      "I've shipped LLM pipelines into production underwriting workflows, co-founded a healthcare workflow platform running in pilot clinics, and written computer-vision code that helps a UAV land on its own.",
+      "I'm a Computer Science and Mathematics student at the University of Waterloo who enjoys turning complex, real-world problems into reliable software.",
+      "I've shipped production LLM systems at Northbridge Financial, co-founded a healthcare workflow platform running in pilot clinics, and am building Cogd.ai, a digital health platform exploring keystroke dynamics as a biomarker for cognitive and neurological health. I enjoy building end-to-end solutions that move beyond prototypes to solve real problems for real users.",
     ],
     education: {
       school: 'University of Waterloo',
@@ -164,9 +164,9 @@ export const content = {
       ],
     },
     quick_stats: [
-      { value: '97%+', label: 'recall on risk classification model' },
-      { value: '2', label: 'pilot clinics running MedFlow AI' },
-      { value: '30+ FPS', label: 'live UAV camera processing' },
+      { value: '14', label: 'beta testers using Cogd.ai' },
+      { value: '2', label: 'clinics piloting the AI healthcare workflow platform' },
+      { value: 'End-to-end', label: 'from AI systems to shipped products' },
     ],
   },
   products,
