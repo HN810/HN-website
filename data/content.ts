@@ -70,7 +70,7 @@ const products: Product[] = [
 const projects: Project[] = [
   {
     id: 'ckd-predictor',
-    index: '02',
+    index: '01',
     name: 'Chronic Kidney Disease Predictor',
     kind: 'Machine learning · Healthcare',
     summary:
@@ -80,7 +80,7 @@ const projects: Project[] = [
   },
   {
     id: 'sign-language',
-    index: '03',
+    index: '02',
     name: 'Sign Language Detector',
     kind: 'Computer vision · Real-time detection',
     summary:
@@ -90,7 +90,7 @@ const projects: Project[] = [
   },
   {
     id: 'uav-landing',
-    index: '01',
+    index: '03',
     name: 'Autonomous UAV Landing',
     kind: 'University of Waterloo Aerial Robotics Group',
     period: 'Sep – Dec 2025',

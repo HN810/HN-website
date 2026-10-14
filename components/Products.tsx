@@ -16,7 +16,7 @@ function ProductBlock({ product, reverse }: { product: Product; reverse: boolean
     offset: ['start end', 'end start'],
   })
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, reduced ? 1 : 0.96, reduced ? 1 : 0.94])
-  const opacity = useTransform(scrollYProgress, [0, 0.85, 1], [1, 1, reduced ? 1 : 0.55])
+  const opacity = useTransform(scrollYProgress, [0, 0.85, 1], [1, 1, reduced ? 1 : 0.85])
   const visualY = useTransform(scrollYProgress, [0, 1], [0, reduced ? 0 : -30])
   const [stickyTop, setStickyTop] = useState<number>()
 
@@ -52,7 +52,7 @@ function ProductBlock({ product, reverse }: { product: Product; reverse: boolean
     >
       <motion.article
         style={{ scale, opacity }}
-        className="relative mx-auto max-w-[1280px] overflow-hidden rounded-xl border border-accent/20 bg-bg-elevated/70 px-4 py-10 shadow-[0_0_80px_-40px_rgba(124,245,196,0.35)] sm:px-8 md:py-14"
+        className="relative mx-auto max-w-[1280px] overflow-hidden rounded-xl border border-accent/20 bg-bg-elevated px-4 py-10 shadow-[0_0_80px_-40px_rgba(124,245,196,0.35)] sm:px-8 md:py-14"
       >
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent"
